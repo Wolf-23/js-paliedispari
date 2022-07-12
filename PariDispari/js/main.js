@@ -8,9 +8,11 @@ let max = 5;
 let num = 0;
 
 
-let numeroPc = numRandom(num);
+let numeroPc = numRandom(min, max);
 let sommaNumeri = numero + numeroPc;
-console.log(numero, numeroPc, sommaNumeri, numRandom(num));
+console.log(numero, numeroPc, sommaNumeri, numRandom(min, max));
+
+
 
 let pariDispari = controllo(sommaNumeri);
 

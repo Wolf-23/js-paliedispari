@@ -19,6 +19,7 @@ if (parola == invertita){
 let parola = prompt('Inserisci una parola:');
 let nuovaParola = inverteparola(parola);
 
+
 if (parola == nuovaParola){
     alert('La parola è palindroma');
 } else {
@@ -26,9 +27,11 @@ if (parola == nuovaParola){
 }
 
 function inverteparola(stringa) {
-    let caratteri = stringa.split('');
-    let reverseParola = caratteri.reverse();
-    let invertita = reverseParola.join('');
-    return invertita;
-}
+    let stringaArray = stringa.split('');
+    let stringaReverse = '';
+    for (let x = stringa.length - 1; x >= 0; x--) {
+        stringaReverse += stringaArray[x];
+    }
+    return stringaReverse;
 
+}
