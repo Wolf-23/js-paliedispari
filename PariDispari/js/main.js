@@ -2,14 +2,14 @@ let scelta = prompt('Scegli tra pari e dispari:');
 
 let numero = parseInt(prompt('Inserisci un numero da 1 a 5:'));
 
-let min = 0;
+let min = 1;
 let max = 5;
 
 
 let numeroPc = numRandom(min, max);
 let sommaNumeri = numero + numeroPc;
 alert(`La somma è ${sommaNumeri}`);
-console.log(numero, numeroPc, sommaNumeri, numRandom(min, max));
+console.log(numero, numeroPc, sommaNumeri);
 
 let pariDispari = controllo(sommaNumeri);
 
